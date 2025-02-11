@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5du4p66oebn0"]
+
+[ext_resource type="Texture2D" uid="uid://c8wx7jt4crgpc" path="res://void-realms-draft-icon.png" id="1_7pouc"]
+
+[node name="MainMenu" type="MarginContainer"]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 60
+
+[node name="Half-Split Container" type="HBoxContainer" parent="."]
+texture_filter = 1
+layout_mode = 2
+
+[node name="Left-Side Container" type="VBoxContainer" parent="Half-Split Container"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="Logo" type="TextureRect" parent="Half-Split Container/Left-Side Container"]
+layout_mode = 2
+texture = ExtResource("1_7pouc")
+
+[node name="Start Button" type="Label" parent="Half-Split Container/Left-Side Container"]
+texture_filter = 1
+layout_mode = 2
+text = "Start Game"
+
+[node name="Load Button" type="Label" parent="Half-Split Container/Left-Side Container"]
+layout_mode = 2
+text = "Load Game"
+
+[node name="Options Button" type="Label" parent="Half-Split Container/Left-Side Container"]
+layout_mode = 2
+text = "Options"
+
+[node name="Exit Button" type="Label" parent="Half-Split Container/Left-Side Container"]
+layout_mode = 2
+text = "Exit"
+
+[node name="Version Info" type="Label" parent="Half-Split Container/Left-Side Container"]
+layout_mode = 2
+text = "ver 0.0.1"
+
+[node name="Right-Side Container" type="VBoxContainer" parent="Half-Split Container"]
+layout_mode = 2
+alignment = 2
+
+[node name="News Button" type="MenuButton" parent="Half-Split Container/Right-Side Container"]
+layout_mode = 2
+text = "Notes / News"
+icon_alignment = 2
